@@ -17,6 +17,8 @@ It actually depends. Depends how precious a mouse's life is to you.
 
 We basically let each mouse test a sip from one different bottle each
 
+Then we wait 3 hours to see if any mouse has a reaction
+
 We repeat this until a mouse shows a reaction to the poison then that bottle is the poisonous one
 
 This will not take more than ((127/8) + 1) * 3 hrs = 16(Because it was a floor division) * 3 hrs = 48 hrs
