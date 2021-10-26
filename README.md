@@ -34,6 +34,8 @@ Each mouse takes a sip from each bottle in a group that is assigned to it
 
 We repeat the step minus the poisoned mouse until we find the poisoned bottle
 
+We use the bottles of the poisoned mouse's group to repeat the step
+
 For each round one mouse will be poisoned.
 
 It will take exactly 9 hrs.
