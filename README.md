@@ -78,3 +78,39 @@ The train goes back and forth many times and we want to find the favourite seat 
 `go run seat.go`
 
 The solution's time will be O(n) and the memory usage will also be O(n)
+
+**How many types of Go channels are there and what is the difference between them?**
+
+I referred [here](https://www.golangprograms.com/go-language/channels.html) to find out
+
+Basically channels are for sending data between goroutines and goroutines are for concurrent activity which Go is known for
+
+Data is sent into a channel like so: `channel <- data` and the channel sends the data like so: `data := <- channel`
+
+There are two types of Go channels **Buffered** and **Unbuffered**:
+
+**Buffered channels**:
+
+For sending data asynchronously
+
+A buffered channel is declared like so `buffered := make(chan int, 10)`
+
+The int means that this is a channel for passing integers and the 10 means the number of values it will buffer
+
+When data is received from a buffered channel the channel will hold the data of its capacity until the receiving point receives the data
+
+If there is no available buffer to place the data being sent the **send** will block
+
+If there is no data being sent, a **receive** will block
+
+**Unbuffered channels**:
+
+For sending data synchronously
+
+An unbuffered channel is declared like so `unbuffered := make(chan int)`
+
+The int meaning it sends and receives integers but unlike a buffered channel it has no capacity declaration
+
+> An unbuffered channel provides a guarantee that an exchange between two goroutines is performed at the instant the send and receive take place. A buffered channel has no such guarantee.
+
+An unbuffered channel will make a **send** or **receive** goroutine wait if the **send** and **receive** are not ready at the same instant
