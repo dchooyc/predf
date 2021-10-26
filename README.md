@@ -1,18 +1,18 @@
 # predf
 
-##### There are 30 horses. What is the minimum number of races needed so you can identify the fastest 2 horses? You can race up to 5 horses at a time, but you do not have a watch. Please write your answer in detailed steps.
+**There are 30 horses. What is the minimum number of races needed so you can identify the fastest 2 horses? You can race up to 5 horses at a time, but you do not have a watch. Please write your answer in detailed steps.**
 
-###### For the horses problem:
+**For the horses problem:**
 In every race we take the fastest two horses
 ![horses illustration](horses.png)
 `go run horse.go`
 
-##### There are 127 bottles of water, one of which is poisoned. It takes 3 hours for the poison to take effect. You are given 8 mice. How long will it take to test which bottle of water is poisoned? Please write your answer in detailed steps.
+**There are 127 bottles of water, one of which is poisoned. It takes 3 hours for the poison to take effect. You are given 8 mice. How long will it take to test which bottle of water is poisoned? Please write your answer in detailed steps.**
 
 for the poison bottle problem:
 It actually depends. Depends how precious a mouse's life is to you.
 
-###### If very precious:
+**If very precious:**
 ![slow mouse illustration](slow_mouse.png)
 
 We basically let each mouse test a sip from one different bottle each
@@ -25,7 +25,7 @@ This could take shortest just 3 hrs because the first round of tests may show th
 
 At most one mouse will be hurt.
 
-###### If not precious:
+**If not precious:**
 ![fast mouse illustration](fast_mouse.png)
 
 We divide the bottles into almost equal groups (16 * 7) + 15
