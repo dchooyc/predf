@@ -56,3 +56,23 @@ We want to find the index of the number plate without a complementing pair
 `go run dinner.go`
 
 The solution's time will be O(n) and the memory usage will also be O(n)
+
+**There is a train from Shenzhen to Beijing without stopping. There are a total of 10 million
+seats on this train. When the seat number is 1-10 million, the conductor sells two tickets
+with the same seat number. It is assumed that the tickets sold by the conductor are
+recorded and stacked randomly. How to quickly find out the number of a heavily sold ticket.
+Please work out a formula and analyze the time taken and tediosity of the formula.**
+
+This question is a little unclear so this may not be the intended solution
+
+Assuming we're to find the most popular seat number that is purchased
+
+Let's say everytime a seat is sold, the seat number is entered twice into an integer array
+
+Let's say passengers get to pick their seat
+
+The train goes back and forth many times and we want to find the favourite seat of passengers
+
+`go run seat.go`
+
+The solution's time will be O(n) and the memory usage will also be O(n)
