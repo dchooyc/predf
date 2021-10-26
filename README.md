@@ -27,3 +27,13 @@ At most one mouse will be hurt.
 
 ###### If not precious:
 ![fast mouse illustration](fast_mouse.png)
+
+We divide the bottles into almost equal groups (16 * 7) + 15
+
+Each mouse takes a sip from each bottle in a group that is assigned to it
+
+We repeat the step minus the poisoned mouse until we find the poisoned bottle
+
+For each round one mouse will be poisoned.
+
+It will take exactly 9 hrs.
