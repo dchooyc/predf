@@ -114,3 +114,17 @@ The int meaning it sends and receives integers but unlike a buffered channel it 
 > An unbuffered channel provides a guarantee that an exchange between two goroutines is performed at the instant the send and receive take place. A buffered channel has no such guarantee.
 
 An unbuffered channel will make a **send** or **receive** goroutine wait if the **send** and **receive** are not ready at the same instant
+
+**Given a string that only includes'(',')','{','}','[',']', judge whether the string is valid. A valid string must meet:**
+
+**（1）The left parenthesis must be closed with the same type of right parenthesis**
+
+**（2）The opening parenthesis must be closed in the correct order**
+
+![inflection illustration](inflection.png)
+
+We see that for valid parenthesis there is always an inner most opening and closing parenthesis
+
+We can use a stack for such a problem as the the last recently opened parenthesis is also the next most likely closing parenthesis
+
+`go run valid.go`
