@@ -36,6 +36,23 @@ We repeat the step minus the poisoned mouse until we find the poisoned bottle
 
 We use the bottles of the poisoned mouse's group to repeat the step
 
-For each round one mouse will be poisoned.
+For each round one mouse will be poisoned
+
+The bottle which the last poisoned mouse sipped from is the poisoned bottle
 
 It will take exactly 9 hrs.
+
+**The company organizes an annual dinner with a total of 801 people. Each person has a
+number plate, and each person's number plate is different. Originally, everyone can add
+the number plate of another person’s to get a score of 888, but because the total number
+of people in the company is odd, there must be someone who did not get a number plate.
+Please work out a formula find this single person, and analyze the time taken and tediosity
+of the formula.**
+
+Let's say that each of these number plates are an integer in an array of integers
+
+We want to find the index of the number plate without a complementing pair
+
+`go run dinner.go`
+
+The solution's time will be O(n) and the memory usage will also be O(n)
